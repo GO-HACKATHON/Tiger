@@ -1,0 +1,9 @@
+[submodule "golang_healthcheck"]
+	path = golang_healthcheck
+	url = https://github.com/gsukanto/golang_healthcheck.git
+[submodule "nodejs_healthcheck"]
+	path = nodejs_healthcheck
+	url = https://github.com/gsukanto/nodejs_healthcheck.git
+[submodule "python_healthcheck"]
+	path = python_healthcheck
+	url = https://github.com/gsukanto/python_healthcheck.git
