@@ -13,18 +13,45 @@ JonggrangAi builds a graph of all your resources, and parallelizes the creation 
 - **Change Automation**
 Complex changesets can be applied to your infrastructure with minimal human interaction. With the previously mentioned execution plan and resource graph, you know exactly what JonggrangAi will change and in what order, avoiding many possible human errors.
 
+## JonggrangAi on AWS
+![aws illustration](https://he-s3.s3.amazonaws.com/media/uploads/383c982.png)
+
 ## How to use
-To be done!
+1. Clone repository
+```
+git clone https://github.com/GO-HACKATHON/Tiger.git
+```
+2. Pull submodules
+```
+git pull --recurse-submodules && git submodule update --recursive --remote
+```
+3. Install and run minishift (Mac OS X only)
+```
+cd openshift_maker && make install && make run
+```
+4. Run JonggrangAi
+```
+cd ../jonggrang_ai && docker-compose up
+```
 
 ## Stack
-- Go
-- Python
-- Node
-- Ruby on Rails
+Healthcheck:
+- **Go** - An open source programming language that makes it easy to build simple, reliable, and efficient software.
+- **Python** - 
+Widely used high-level programming language for general-purpose programming
+- **Node.js** - Event-driven I/O server-side JavaScript environment based on V8
+- **Ruby on Rails** - A full stack, Web application framework optimized for sustainable programming productivity, allows writing sound code by favoring convention over configuration.
+<br/><br/>
+JonggrangAi:
+- **Ruby on Rails**
+- **Redis** - An open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker.
+
+## Diagram
+![diagram](images/diagram.jpeg)
 
 ## Authors
 We need new challenges!
-- Gregory Sukanto
+- Gregory Sukanto<br/>
 gregory.sukanto@gmail.com | 083854904403
-- Made Aryadinata
+- Made Aryadinata<br/>
 madearyadinata@gmail.com | 081234696267
