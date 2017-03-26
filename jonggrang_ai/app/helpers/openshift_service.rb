@@ -1,6 +1,13 @@
 module OpenshiftService
+    CREATE_TEMPLATE_URL= "#{ENV['OPENSHIFT_URL']}/oapi/v1/namespaces/jonggrangai/processedtemplates"
+    LIST_TEMPLATE_URL= "#{ENV['OPENSHIFT_URL']}/oapi/v1/namespaces/jonggrangai/templates"
+    DELETE_TEMPLATE_URL= "#{ENV['OPENSHIFT_URL']}/oapi/v1/namespaces/jonggrangai/templates"
+    CREATE_CLUSTER_URL= "#{ENV['OPENSHIFT_URL']}/oapi/v1/appliedclusterresourcequotas"
+    LIST_CLUSTER_URL= "#{ENV['OPENSHIFT_URL']}/oapi/v1/clusternetworks"
+    DELETE_CLUSTER_URL= "#{ENV['OPENSHIFT_URL']}/oapi/v1/clusternetworks"
+
     # Example request openshift api format
-    # /oapi/v1/namespaces/default/buildconfigs
+    # /oapi/v1/namespaces/jonggrangai/buildconfigs
     # {
     #   "metadata": {
     #     "name": "nodejs-test-api"
@@ -19,24 +26,30 @@ module OpenshiftService
     # }
 
     class Template
-        def self.create
+        def self.create(config)
+            post_json(CREATE_TEMPLATE_URL, config)
         end
 
-        def self.list
+        def self.list(config)
+            post_json(LIST_TEMPLATE_URL, config)
         end
 
-        def self.delete
+        def self.delete(config
+            post_json(DELETE_TEMPLATE_URL, config))
         end
     end
 
     class Cluster
-        def self.create
+        def self.create(config
+            post_json(CREATE_CLUSTER_URL, config))
         end
 
-        def self.list
+        def self.list(config)
+            post_json(LIST_CLUSTER_URL, config)
         end
 
-        def self.delete
+        def self.delete(config
+            post_json(DELETE_CLUSTER_URL, config))
         end
     end
 
