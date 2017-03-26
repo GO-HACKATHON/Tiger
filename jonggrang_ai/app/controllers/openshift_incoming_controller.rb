@@ -1,4 +1,4 @@
-class OpenshiftIncomingControllerController < ApplicationController
+class OpenshiftIncomingController < ApplicationController
     include OpenshiftIncomingControllerHelper
     include SlackService
     

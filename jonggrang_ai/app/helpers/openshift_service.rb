@@ -34,22 +34,22 @@ module OpenshiftService
             post_json(LIST_TEMPLATE_URL, config)
         end
 
-        def self.delete(config
-            post_json(DELETE_TEMPLATE_URL, config))
+        def self.delete(config)
+            post_json(DELETE_TEMPLATE_URL, config)
         end
     end
 
     class Cluster
-        def self.create(config
-            post_json(CREATE_CLUSTER_URL, config))
+        def self.create(config)
+            post_json(CREATE_CLUSTER_URL, config)
         end
 
         def self.list(config)
             post_json(LIST_CLUSTER_URL, config)
         end
 
-        def self.delete(config
-            post_json(DELETE_CLUSTER_URL, config))
+        def self.delete(config)
+            post_json(DELETE_CLUSTER_URL, config)
         end
     end
 

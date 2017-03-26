@@ -1,4 +1,4 @@
-class SlackIncomingControllerController < ApplicationController
+class SlackIncomingController < ApplicationController
     include SlackIncomingControllerHelper
     include SlackService
 
