@@ -14,7 +14,7 @@ JonggrangAi builds a graph of all your resources, and parallelizes the creation 
 Complex changesets can be applied to your infrastructure with minimal human interaction. With the previously mentioned execution plan and resource graph, you know exactly what JonggrangAi will change and in what order, avoiding many possible human errors.
 
 ## JonggrangAi on AWS
-![aws illustration](https://he-s3.s3.amazonaws.com/media/uploads/383c982.png)
+![aws illustration](images/on-aws.png)
 
 ## How to use
 1. Clone repository
